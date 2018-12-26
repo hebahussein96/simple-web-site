@@ -1,0 +1,412 @@
+/* Start Glopal */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+Body{
+    background-color:rgb(255, 255, 255);
+}
+.container{
+    width:1200px;
+    margin: auto;
+}
+.clear-fix::before,
+.clear-fix::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+nav,header,.services,.our-team,.testimonials,.projects,.gallery,footer{
+    min-width: 1200px;
+}
+/* End Glopal */
+/* Start NavBar */
+nav{
+    font-size: 18px;
+    height: 0;
+    color: #fff;
+    position: relative;
+    z-index:2;
+}
+nav .brand{
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+}
+nav .links{
+    float: left;
+    width: 50%;
+    margin: 25px 0 0 0;
+}
+nav .links ul{
+    list-style: none;
+}
+nav .links ul li{
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 10px 3px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    font-weight: bold;
+}
+nav .links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .links ul li.active,nav .links ul li:hover{
+    border-bottom: 3px solid #1ABC9C;
+}
+nav .links ul li.active a,nav .links ul li a:hover{
+    color: #1ABC9C;
+}
+/* End NavBar */
+/* Start Header */
+header .header{
+    background: url('http://elzero.net/demos/courses/Preview2HtmlLv2/images/header2.jpg');
+    width: 100%;
+    height:500px;
+    }
+    header .header .overlay{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    header .header .bx-wrapper {
+           background: none;
+        box-shadow: none;
+        border: 0; 
+        height: 100%  ;
+        text-align: center;
+    }
+    header .header .overlay .bxslider{
+        height: 100;
+    }
+    header .header .overlay .bxslider li{
+        display: block;      
+
+    }
+    header .header .overlay .bxslider li h2{
+        font-size: 60px;
+        color: #fff;
+        margin: 0 0 20px  0;
+        font-weight: bold;
+    }
+    header .header .overlay .bxslider li h2 span{
+        color: #1ABC9C;
+    }
+    header .header .overlay .bxslider li p{
+        color: #fff;
+    }
+    header .header .bx-wrapper .bx-viewport{
+        height: 100% !important;
+    }
+/* End Header */
+/* Start Our Services */
+.services,.portfolio,.testimonials, .contact{
+    padding: 80px 20px;
+
+}
+.services h2{
+    margin: 0 0 50px;
+}
+.services .item{
+    float: left;
+    width: 33.333333%;
+}
+.services .item i{
+    color: #1ABC9C;
+    width: 17%;
+    margin:10px 8% 0 0;
+    float: left;
+}
+.services .item .info{
+    width: 70%;
+    float: left;
+    margin: 0 5% 10% 0;
+}
+.services .item .info h3{
+    color: #333;
+    margin: 0 0 10px 0;
+}
+.services .item .info p{
+    margin: 0 0 0 0;
+    color: #888;
+}
+.our-team {
+    margin: 50px 0 0 0;
+}
+.our-team h2{
+    padding: 0 0 15px 0;
+
+}
+.our-team .box-left{
+    width: 35%;
+}
+.our-team .box-right{
+    width: 65%;
+    float: right;
+    margin: -75px 0 0 0;
+}
+.our-team .box-left p{
+    color: #888;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.our-team .box-right .box{
+    float: right;
+    width: 16.25%;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 3px 6px 0px #ccc;
+    position: relative;
+}
+.our-team .box-right .box .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9cd9;
+    line-height: 100px;
+    /* font-size: 20px; */
+    font-weight:normal;
+    color: #fff;
+    text-align:center;
+    display:none;
+}
+
+.our-team .box-right .box:hover .overlay{
+    display: block;
+}
+
+
+/* End Our Services */
+/* Start testimonials */
+    .testimonials{
+       background-image: url('../images/keybord.png');
+       background-size: cover;
+       height: 400px;
+       position: relative;
+    }
+    .testimonials h2{
+        margin: 70px 0;
+        font-size: 40px;
+    }
+    .testimonials .t-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #181a19cf;
+        font-weight:normal;
+        color: #fff;
+        text-align:center;
+    }
+    .special-heading-test{
+        position: relative;
+    }
+    .special-heading-test::after{
+        content: "";
+    position: absolute;
+    bottom:-10px;
+    right: 751px;
+    width: 46px;
+    border-bottom: 3px solid #fff;
+    }
+    .testimonials .t-overlay q{
+        line-height: 40px; 
+        color:#d1cdcd;
+    }
+    .testimonials .t-overlay p{
+        margin: 25px 0 0 0;
+        color: #1ABC9C;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .testimonials .t-overlay .slider >div{
+        display:none;
+    }
+    .testimonials .t-overlay .slider .active{
+        display:block;
+    }
+/* End testimonials */
+/* Start Our projects */
+.projects{
+    padding: 80px 0;
+}
+.projects ul{
+    margin: 35px 0 0 0;
+}
+.projects ul li{
+    display: inline-block;
+    color: #a7a7a7;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #d2cccc;
+    margin: 0 10px 0 0;
+    width: 6%;
+    text-align: center;
+}
+.projects ul li.selected{
+    background-color: #1ABC9C;
+    color: #fff;
+    border: 2px solid #1ABC9C;
+}
+.projects .gallery{
+    margin: 50px 0 0 0;
+}
+.projects .gallery .row > div{
+    float: left;
+    width: 32.666666%;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+.projects .gallery .row > div:nth-child(2){
+    margin: 0 1%  0 1%;
+}
+.projects .gallery .row > div img{
+    width: 100%;
+}
+.projects .gallery .row > div .over{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9cd9;
+    line-height: 232px;
+    font-weight:normal;
+    color: #fff;
+    text-align:center;
+    display: none;
+    font-size:25px;
+  
+}
+.projects .gallery .row > div .heart{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+}
+
+.projects .gallery .row > div:hover .over ,.projects .gallery .row > div:hover .heart{
+    display: block;
+}
+.projects .shuffle li{
+    cursor: pointer;
+}
+ .mix{
+    display: none;
+}
+
+/* End Our projects */
+/* Start Footer */
+footer{
+    background-color: #232323;
+    color: #6c6c6c;
+    padding: 40px 0;
+}
+footer .footer section{
+    float: left;
+    width: 25%;
+}
+footer .footer section h2{
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+footer .footer section p{
+    margin: 0 0 30px 0;
+    line-height: 1.6;
+}
+footer .footer section i{
+    display: inline-block;
+    color: #e7e7e7;
+    width: 40px;
+    padding: 10px;
+    border: 1px solid #979797;
+}
+footer .footer section span.tags{
+    display: inline-block;
+    color: #e7e7e7;
+    padding: 10px;
+    border: 1px solid #979797;
+    margin:0 5px 10px 0;
+
+}
+footer .footer .recent > div{
+    float: left;
+    margin: 0 0 10px 0;
+}
+footer .footer .recent > div h4{
+    font-weight: normal;
+    color:#e5e0e0;
+    margin: 0;
+}
+footer .footer .recent > div img{
+    float: left;
+    margin-right:  10px;
+}
+footer .footer .blog ul{
+    list-style: none;
+}
+footer .footer .blog li{
+    padding: 15px;
+    border-bottom: 1px solid #979797;
+    color: #e7e7e7;
+    
+}
+footer .copyright{
+    margin-top: 15px;
+}
+/* End Footer */
+/* Start 
+My Freamwork */
+.special-heading{
+    position: relative;
+}
+.special-heading::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40px;
+    border-bottom: 2px solid #333;
+}
+.special-heading-photo{
+    position: relative;
+}
+.special-heading-photo::after{
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 64px;
+    width: 25px;
+    border-bottom: 2px solid #fff;
+}
+
+hr{
+    border: 1px solid #eee;
+}
+h2,h3,h4{
+    font-weight: normal;
+}
+    /* End My Freamwork */
